@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./bin/www",
-    "test": "testcafe chrome functionalTest/tests/ -e",
-    "safari" : "testcafe safari functionalTest/tests/ -e"
+    "test": "testcafe chrome functionalTest/tests/ -e -r xunit:res.xml",
+    "safari": "testcafe safari functionalTest/tests/ -e"
   },
   "author": "Eduardo",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "testcafe-reporter-xunit": "^2.1.0"
+  },
   "devDependencies": {
     "testcafe": "^1.1.0"
   }
