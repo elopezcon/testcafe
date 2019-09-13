@@ -1,8 +1,8 @@
 import { Selector } from 'testcafe';
 
 export default class HomePage {
-    constructor (){
-        this.loginButton = Selector ('button[type=button]');
-        this.header      = Selector('#welcome-page h1');
+    constructor() {
+        this.loginButton = Selector('.button-login');
+        this.header = Selector('#welcome-page').find('h1');
     }
 }
